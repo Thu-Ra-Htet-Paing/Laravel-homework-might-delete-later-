@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+#wave {
+    height: 200px;
+    width: 100%;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;   
+    font-size: 3.5rem;
+    margin-bottom: 50px;
+}
+
+#svg {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line if they overflow */
+    gap: 15px; /* Adjust spacing between cards */
+    justify-content: space-around; /* Adjust the alignment of the cards */   
+}
+
+.outerDiv {
+    border: 1px black solid;
+    border-radius: 10px;
+    margin: 20px;
+    width: 350px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}   
+
+.innerDiv {
+    width: 300px;
+}
+
+.image {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.name {
+    font-weight: 700;   
+    margin-bottom: 10px; 
+}
+
+.priceNdis {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.btnDiv {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buyBtn {
+    width: 45px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #ff8a65;
+}
+
+footer {
+    background-color: #0099FF;
+}
+
+#footer {
+    width: 300px;
+    display: inline-block;
+}
+
+.bye {
+    display: inline-block;
+    text-align: center;
+}
+
+@media (max-width: 790px) {
+    #wave {
+        height: 100px;
+        width: 100%;
+    }
+    #title {
+        font-size: 2rem;
+    }
+}
