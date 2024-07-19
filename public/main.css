@@ -6,6 +6,7 @@
 
 body {
     position: relative;
+    height: 100%;
 }
 
 #wave {
@@ -44,6 +45,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;  
+    z-index: 2;
 }   
 
 .innerDiv {
@@ -78,24 +80,53 @@ body {
 }
 
 .buyBtn {
-    width: 45px;
-    height: 30px;
+    width: 63px;
+    height: 35px;
     border-radius: 10px;
-    background-color: #ff8a65;
+    background-color: #FF497C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
 }
 
 footer {
     background-color: #0099FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relativeab;
+    padding: 20px;
+    bottom: 0px;
 }
 
-#footer {
-    width: 300px;
-    display: inline-block;
+#footerContent {
+    flex: 1;
+    font-style: italic;
 }
 
-.bye {
-    display: inline-block;
+.thanking {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+}
+
+.icon-arrow {
+    margin-left: 5px;
+    max-width: 100%
+}
+
+.icon-rocket {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    z-index: 1;
 }
 
 @media (max-width: 790px) {

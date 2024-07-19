@@ -16,15 +16,17 @@
         </div> 
     </nav>
     {{ $slot }}
+    <img class="icon-rocket" src="icons/icons8-rocket-100.png">
     <footer>
-        <div id="footer">
-            <div>info</div>
-            <div>contact</div>
-            <div>setting</div>
-            <div>help</div>
+        <div id="footerContent">
+            <div><a href="/info">info</a><img class="icon-arrow" src="icons/icons8-chevron-left-16.png"></div>
+            <div><a href="/contact">contact</a><img class="icon-arrow" src="icons/icons8-chevron-left-16.png"></div>
+            <div><a href="/setting">setting</a><img class="icon-arrow" src="icons/icons8-chevron-left-16.png"></div>
+            <div><a href="/help">help</a><img class="icon-arrow" src="icons/icons8-chevron-left-16.png"></div>
         </div>
-        <div class="bye">
+        <div class="thanking">
             <h1>Thanks for shopping</h1>
+            <img src="icons/icons8-buying-100.png">
         </div>
     </footer>
 </body>

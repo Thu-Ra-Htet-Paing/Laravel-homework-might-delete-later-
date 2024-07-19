@@ -8,3 +8,8 @@ Route::get('/', function () {
         "products" => Product::all()
     ]);
 });
+
+Route::get('/info', function () {
+    return view('info');
+});
+
